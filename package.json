@@ -1,7 +1,9 @@
 {
 		"scripts": {
 				"start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
-				"test": "jest --verbose"
+				"test": "jest --verbose",
+				"install": "lerna bootstrap --hoist",
+				"build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js"
 		},
 		"devDependencies": {
 				"@storybook/react": "^3.4.2",

@@ -27,7 +27,7 @@ describe('Login Form Component', function() {
       <LoginForm />
     ))
 
-    const usernameField = wrapper.find('[name="username"]')
+    const usernameField = wrapper.find('input[name="username"]')
     expect(usernameField.length).toBe(1)
   })
 
@@ -36,7 +36,7 @@ describe('Login Form Component', function() {
       <LoginForm />
     ))
 
-    const passwordField = wrapper.find('[name="password"]')
+    const passwordField = wrapper.find('input[name="password"]')
     expect(passwordField.length).toBe(1)
   })
 

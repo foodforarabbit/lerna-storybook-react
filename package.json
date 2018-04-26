@@ -1,0 +1,31 @@
+{
+		"scripts": {
+				"start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
+				"test": "jest --verbose"
+		},
+		"devDependencies": {
+				"@storybook/react": "^3.4.2",
+				"babel-cli": "^6.26.0",
+				"babel-jest": "^22.4.3",
+				"babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+				"babel-preset-env": "^1.6.1",
+				"babel-preset-react": "^6.24.1",
+				"enzyme": "^3.3.0",
+				"glob-loader": "^0.3.0",
+				"jest": "^22.4.3",
+				"lerna": "^2.11.0",
+				"react": "^16.3.2",
+				"react-dom": "^16.3.2",
+				"react-test-renderer": "^16.3.2",
+				"styled-components": "^3.2.6"
+		},
+		"jest": {
+				"resetModules": true,
+				"testMatch": [
+						"**/?(*.)(spec).js?(x)"
+				],
+				"testPathIgnorePatterns": [
+						"<rootDir>/node_modules/"
+				]
+		}
+}

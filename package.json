@@ -5,12 +5,15 @@
 		},
 		"devDependencies": {
 				"@storybook/react": "^3.4.2",
+				"@types/enzyme": "^3.1.10",
+				"@types/enzyme-adapter-react-16": "^1.0.2",
 				"babel-cli": "^6.26.0",
 				"babel-jest": "^22.4.3",
 				"babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
 				"babel-preset-env": "^1.6.1",
 				"babel-preset-react": "^6.24.1",
 				"enzyme": "^3.3.0",
+				"enzyme-adapter-react-16": "^1.1.1",
 				"glob-loader": "^0.3.0",
 				"jest": "^22.4.3",
 				"lerna": "^2.11.0",
@@ -26,6 +29,10 @@
 				],
 				"testPathIgnorePatterns": [
 						"<rootDir>/node_modules/"
-				]
-		}
+				],
+				"modulePaths": [
+				],
+    		"setupTestFrameworkScriptFile": "<rootDir>/internals/jest/setup.js"
+		},
+		"dependencies": {}
 }

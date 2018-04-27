@@ -1,0 +1,16 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack-cli --mode=production",
+    "postinstall": "webpack-cli --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+  },
+  "peerDependencies": {
+    "react": "^16.3.2"
+  }
+}
